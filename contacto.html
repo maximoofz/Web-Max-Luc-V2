@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - MaxLuc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="index.html"><img src="logo.png" alt="MaxLuc"></a></div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-es="Inicio" data-en="Home">Inicio</a></li>
+            <li><a href="nosotros.html" data-es="Nosotros" data-en="About Us">Nosotros</a></li>
+            <li><a href="servicios.html" data-es="Servicios" data-en="Services">Servicios</a></li>
+            <li><a href="contacto.html" data-es="Contacto" data-en="Contact">Contacto</a></li>
+            <li><button id="lang-toggle" class="lang-btn" onclick="toggleLanguage()">EN</button></li>
+        </ul>
+    </nav>
+
+    <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+        <div>
+            <h1 class="section-header" data-es="Contacto" data-en="Contact">Contacto</h1>
+            <p data-es="Comuníquese con nuestro equipo de ingeniería para evaluar la factibilidad técnica y operativa de su proyecto." data-en="Contact our engineering team to evaluate the technical and operational feasibility of your project.">Comuníquese con nuestro equipo de ingeniería para evaluar la factibilidad técnica y operativa de su proyecto.</p>
+            
+            <div style="margin-top: 3rem; color: var(--text-muted);">
+                <h3 style="color: var(--text-main); margin-bottom: 0.5rem;" data-es="Operaciones" data-en="Operations">Operaciones</h3>
+                <p><strong>Juan Jose Figueroa Cohn</strong><br>Director Técnico</p>
+                <p>Email: <a href="mailto:jfigueroa@max-luc.com" style="color: var(--accent);">jfigueroa@max-luc.com</a></p>
+                <p style="margin-top: 1rem;">Ubicación: Concepción, Chile</p>
+            </div>
+        </div>
+
+        <div>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Nombre / Name" required>
+                <input type="email" placeholder="Correo corporativo / Corporate Email" required>
+                <input type="text" placeholder="Empresa / Company" required>
+                <textarea rows="5" placeholder="Descripción del requerimiento técnico / Technical requirement description..." required></textarea>
+                <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;" data-es="Enviar Solicitud" data-en="Submit Request">Enviar Solicitud</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
